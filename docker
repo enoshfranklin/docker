@@ -1,0 +1,51 @@
+docker images >> to list images
+
+docker ps  >> to list currently running containers
+
+docker ps -a >> to list all containers
+
+docker pull 'image name' >> pull latest image from docker hub
+
+docker pull 'image_name:version' >> pull version specific images from docker hub
+
+docker run 'image name' >> to run container
+
+docker run -d 'image name'  >> to run in dettached mode
+
+docker run -d 'image_name:version'  >> to run version specifc conatiner
+
+docker stop 'container id'  >> to stop container
+
+docker start 'container id'  >> to start container
+
+docker run -p:hostport:containerport -d image >> to map port >> eg docker run -p:5000:6700 -d redis
+
+docker logs 'conatiner id' >> to check logs
+
+docker exec -it 'container name' /shell/path >> to login to container >> eg: docker exec -it redis-new /bin/bash
+
+docker build -t image name directory name >> to build a docker image
+
+docker container prune >> delete all stopped containers
+
+docker network create --driver bridge network name >> to create a new network driver
+
+docker-compose up -d >> to compose and run container
+
+docker-compose down -f "docker compse file" >> down container
+
+docker rmi image name >> to remove images
+
+docker run -v name:/virtual/file/path >> create docker voulume
+
+docker voulume -ls >> list docker voulumes
+
+docker voulume inspect 'volume name'  >> to find the actual path were the voulume is stored
+
+docker login >> to login to docker hub
+
+docker tag imgaename:tag username/reponame:tag >> must do before pushing docker images
+
+docker push username/reponame:tag >> to push
+
+
